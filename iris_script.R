@@ -2,8 +2,8 @@
 library(tidyverse)
 library(AzureStor)
 
-access_key <- "bfNklbxCSen0lIHBFSm3xc1SqZgetjCkBJqg785wYOY62hV8ZlDPJDg740MvqEwVQzuUhV9G61niNCXESH2GnQ=="
-share <- file_share("https://saxostoragebatchprd.file.core.windows.net/iris",
+access_key <- ""
+share <- file_share("https://mystorageaccount.file.core.windows.net/iris",
                     key=access_key)
 
 download_azure_file(share, "iris.csv","iris.csv",overwrite=T)
